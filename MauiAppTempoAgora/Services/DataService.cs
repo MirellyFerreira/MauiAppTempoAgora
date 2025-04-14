@@ -10,6 +10,8 @@ namespace MauiAppTempoAgora.Services
 {
     public class DataService
     {
+        private static Tempo? t;
+
         public static async Task<Tempo?> GetPrevisao(string cidade)
         {
             Tempo? tempo = null;
